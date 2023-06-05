@@ -1,0 +1,16 @@
+<mat-card>
+  <mat-toolbar color="primary">Enquete - Cadastro</mat-toolbar>
+
+  <mat-card-content>
+    <form [formGroup]="form">
+      <mat-form-field class="full-screen">
+        <input matInput placeholder="Digite a enquete" formControlName="titulo">
+      </mat-form-field>
+
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="primary" (click)="onSubmit()">Salvar</button>
+    <button mat-raised-button (click)="onCancel()">Cancelar</button>
+  </mat-card-actions>
+</mat-card>
